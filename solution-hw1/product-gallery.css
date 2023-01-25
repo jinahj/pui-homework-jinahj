@@ -1,5 +1,5 @@
 hr{
-  border: 1px solid; 
+  border: 2px solid; 
 }
 
 p{
@@ -7,8 +7,10 @@ p{
 }
 
 .logo{
-  width: 120px;
-  height: 100px; 
+  width: 240px;
+  height: 160px; 
+  padding-left: 20px; 
+  padding-top: 10px; 
 }
 
 .title{
