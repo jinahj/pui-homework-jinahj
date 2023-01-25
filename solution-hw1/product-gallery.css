@@ -1,3 +1,34 @@
+.p{
+  font-family: Arial; 
+}
+
 .logo{
-  
+  width: 120px;
+  height: 100px; 
+}
+
+.title{
+  text-align: center;
+}
+
+.cart{
+  text-align: center; 
+}
+
+.description{
+  text-align: center; 
+}
+
+.product-photo{
+  width: 120px; 
+  height: 125px; 
+  display: block; 
+  margin-right: auto; 
+  margin-left: auto; 
+}
+
+.roll-info{
+  width: 120px; 
+  margin-right: auto;
+  margin-left: auto; 
 }
