@@ -6,6 +6,12 @@ p{
   font-family: Arial; 
 }
 
+button{
+  display: block; 
+  margin-right: auto; 
+  margin-left: auto; 
+}
+
 .logo{
   width: 240px;
   height: 160px; 
@@ -30,6 +36,11 @@ p{
   padding-top: 10px; 
 }
 
+.product-name{
+  text-align: center;
+  font-size: 18px; 
+}
+
 .product-photo{
   border: 1px solid; 
   width: 600px; 
@@ -37,4 +48,11 @@ p{
   display: block; 
   margin-right: auto; 
   margin-left: auto; 
+}
+
+.description{
+  margin-right: auto; 
+  margin-left: auto; 
+  width: 200px; 
+  height: 50px; 
 }
