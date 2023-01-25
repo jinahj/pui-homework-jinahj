@@ -6,12 +6,6 @@ p{
   font-family: Arial; 
 }
 
-button{
-  display: block; 
-  margin-right: auto; 
-  margin-left: auto; 
-}
-
 .logo{
   width: 240px;
   height: 160px; 
@@ -56,3 +50,6 @@ button{
   width: 200px; 
   height: 50px; 
 }
+
+/* designing the dropdown button */ 
+
