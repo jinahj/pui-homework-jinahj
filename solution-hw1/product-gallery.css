@@ -28,12 +28,12 @@ p{
 }
 
 .product-photo{
-  border: 1px solid; 
+  border: 2px solid; 
   width: 120px; 
   height: 125px; 
   display: block; 
   margin-right: auto; 
-  margin-left: auto; 
+  margin-left: auto;
 }
 
 .roll-name{
@@ -53,3 +53,15 @@ p{
   margin-top: 0; 
 }
 
+.product-container{
+  padding-top: 5px;
+  margin-bottom: 12px; 
+  margin-right: auto; 
+  margin-left: auto; 
+  width: 130px; 
+}
+
+.product-container:hover{
+  background-color: yellow; 
+  cursor: pointer; 
+}
