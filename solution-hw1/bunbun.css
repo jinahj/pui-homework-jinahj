@@ -2,8 +2,24 @@ hr{
   border: 2px solid
 }
 
+.short-hr{
+  margin-left: 140px;
+  margin-right: 140px; 
+}
+
 p{
   font-family: Arial; 
+}
+
+.merge{
+  margin-top: 0px; 
+  margin-bottom: 0px;
+}
+
+.remove{
+  font-size: 10px; 
+  text-decoration: underline; 
+  margin-top: 5px;
 }
 
 .logo{
@@ -26,6 +42,15 @@ p{
   margin-bottom: 50px; 
   margin-left: auto;
   margin-right: auto; 
+}
+
+.box{
+  border: 2px solid; 
+  margin-right: 380px; 
+  margin-left: 380px; 
+  text-align: center; 
+  background-color: yellow;
+  font-weight: bold; 
 }
 
 .link{
@@ -56,12 +81,22 @@ p{
 }
 
 .product-photo-detail{
-  border: 1.5px solid; 
-  width: 300px; 
-  height: 300px; 
+  border: 3px solid; 
+  width: 400px; 
+  height: 400px; 
   display: block; 
   margin-right: auto; 
   margin-left: auto; 
+}
+
+.product-photo-small{
+  border: 3px solid;
+  width: 80px; 
+  height: 80px; 
+  display: block; 
+  margin-right: auto; 
+  margin-left: auto;
+  margin-bottom: 0px; 
 }
 
 .roll-name{
@@ -74,9 +109,16 @@ p{
   margin-top: 5px; 
 }
 
+.center{
+  margin-right: auto;
+  margin-left: auto; 
+  text-align: center; 
+  padding-bottom: 50px; 
+}
+
 .product-name{
   text-align: center;
-  font-size: 18px; 
+  font-size: 20px; 
 }
 
 .roll-price{
@@ -85,6 +127,12 @@ p{
   margin-right: auto;
   margin-left: auto; 
   margin-top: 0; 
+}
+
+.big-font-cart{
+  font-size: 20px; 
+  margin-bottom: 0px;
+  text-align: center; 
 }
 
 .product-container{
