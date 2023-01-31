@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <title>Product Detail</title>
     <link rel="stylesheet" href="bunbun.css">
@@ -10,7 +10,7 @@
 
     <div> <!--Page Information-->
       <a href="product-gallery.html">
-        <img class= "logo" src="./assets/logo-01.svg">
+        <img class= "logo" src="./assets/logo-01.svg" alt="bunbun logo">
       </a>
       <hr> <!--division line-->
       <p class="product-highlight">PRODUCTS</p>
@@ -22,7 +22,7 @@
 
     <div> <!--Product Information-->
       <p class="product-name">Original cinnamon roll</p>
-      <img class="product-photo-detail" src="./assets/original-cinnamon-roll.jpeg ">
+      <img class="product-photo-detail" src="./assets/original-cinnamon-roll.jpeg " alt="original cinnamon roll">
       <p class="description-detail"> Customize our delicious, hand-made cinammon roll to your liking!</p>
     </div>
 
@@ -30,32 +30,23 @@
 
     <div class="selections"> <!--Selections-->
       <p class="description-detail">Glazing:</p>
-      <div class="dropdown">
-        <button class="dropdown-button">
-          <p class="button-title">Select option</p>
-        </button>
-        <div class="activate-dropdown">
-          <p>Keep original</p>
-          <p>Sugar milk</p>
-          <p>Vanilla milk</p>
-          <p>Double chocolate</p>
-        </div>
+      <div class="locate-dropdown">
+        <select class="dropdown">
+          <option>Keep original</option>
+          <option>Sugar milk</option>
+          <option>Vanilla milk</option>
+          <option>Double chocolate</option>
+        </select>
       </div>
-      
-      <p class="spacer"></p>
-      
 
       <p class="description-detail">Pack size:</p>
-      <div class="dropdown">
-        <button class="dropdown-button">
-          <p class="button-title">Select option</p>
-        </button>
-        <div class="activate-dropdown">
-          <p>1</p>
-          <p>3</p>
-          <p>6</p>
-          <p>12</p>
-        </div>
+      <div class="locate-dropdown">
+        <select class="dropdown">
+          <option>1</option>
+          <option>3</option>
+          <option>6</option>
+          <option>12</option>
+        </select>
       </div>
     </div>
 

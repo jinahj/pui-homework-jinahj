@@ -11,6 +11,10 @@ p{
   font-family: Arial; 
 }
 
+.spacer{
+  height: 30px; 
+}
+
 .merge{ 
   margin-top: 0px; 
   margin-bottom: 0px;
@@ -20,10 +24,6 @@ p{
   font-size: 10px; 
   text-decoration: underline; 
   margin-top: 5px;
-}
-
-.spacer{
-  height: 30px; 
 }
 
 .logo{
@@ -66,11 +66,12 @@ p{
   margin-left: auto;
   margin-top: 10px; 
   margin-bottom: 100px; 
-  width: 120px;
-  height: 30px;
+  width: 130px;
+  height: 40px;
   text-align: center; 
   background-color: yellow;
   font-weight: bold; 
+  font-size: 16px; 
 }
 
 .link{
@@ -87,6 +88,7 @@ p{
   margin-right: auto; 
   margin-left: auto; 
   width: 200px; 
+  margin-bottom: 5px;  
 }
 
 .product-photo{
@@ -177,43 +179,24 @@ p{
 
 .price-cart{
   font-weight: bold;
-  margin-right: 20px; 
+  font-size: 18px; 
+  width: 80px; 
 }
 
-
-/*dropdown button design*/
 .dropdown{
-  height: 150px; 
-}
-
-.dropdown-button{
-  display: block; 
   cursor: pointer; 
-  background-color: white; 
   border: 2px solid; 
-  margin-left: auto;
-  margin-right: auto; 
-  width: 200px; 
-}
-
-.activate-dropdown{
   background-color: white; 
+  padding-top: 5px;  
+  padding-bottom: 5px; 
+  padding-left: 10px; 
+  width: 200px; 
+  text-align: left; 
+  font-size: 14px; 
+}
+
+.locate-dropdown{
   margin-left: auto;
   margin-right: auto; 
   width: 200px; 
-}
-
-.button-title{
-  margin-left: auto; 
-  margin-top: 5px; 
-  margin-bottom: 5px; 
-}
-
-/*dropdown button functional*/
-.activate-dropdown{
-  display: none;
-}
-
-.dropdown:hover .activate-dropdown{
-  display: block; 
 }
