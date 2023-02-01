@@ -1,41 +1,53 @@
-hr{ /*long border line*/
+hr{ 
   border: 3px solid; 
 }
 
-.short-hr{ /*short border line*/
-  margin-left: 320px;
-  margin-right: 320px;
+.short-hr{ 
+  margin-left: 200px;
+  margin-right: 200px;
   border: 3px solid;  
 }
 
-p{ /*set font family on all text */ 
+p{ 
   font-family: Arial; 
 }
+
+h1{ /* for page headings */
+  font-family: Arial; 
+  font-weight: 1; 
+  text-align: center; 
+  font-size: 35px;
+}
+
+h2{ /* set font family for "products" and "cart" selectors */
+  font-family: Arial; 
+}
+
 
 .spacer{ 
   height: 30px; 
 }
 
-.cart-info{ 
-  margin-top: 0px; 
-  margin-bottom: 0px;
-  font-size: 28px; 
-}
-
-.remove{
-  font-size: 10px; 
+.remove{ /* "remove" on shopping cart page */
+  font-size: 10px;  
+  font-weight: bold; 
   text-decoration: underline; 
   margin-top: 5px;
 }
 
-.logo{
+.link{ /* reverse design change when using <a> tag */
+  text-decoration: none; 
+  color: black; 
+}
+
+.logo{ /* applied on all pages */
   width: 360px;
   height: 210px; 
   padding-left: 20px; 
   padding-top: 10px; 
 }
 
-.product-highlight{ 
+.PRODUCTS-highlight{ /* "PRODUCTS" highlighted on product gallery and product detail pages */
   text-align: center;
   font-weight: bold; 
   margin-left: auto;
@@ -45,7 +57,7 @@ p{ /*set font family on all text */
   font-size: 24px; 
 }
 
-.cart-highlight{
+.CART-highlight{ /* "CART" highlighted on shopping cart page */
   text-align: center;
   font-weight: bold; 
   margin-left: auto;
@@ -55,17 +67,17 @@ p{ /*set font family on all text */
   font-size: 24px; 
 }
 
-.title-nhighlight{
+.header-nhighlight{ 
   text-align: center;  
   font-size: 24px; 
   margin-left: auto;
   margin-right: auto; 
 }
 
-.box{
+button{ /*add to cart and checkout buttons */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   border: 3px solid; 
   margin-right: auto; 
   margin-left: auto;
@@ -73,36 +85,18 @@ p{ /*set font family on all text */
   margin-bottom: 100px; 
   width: 200px;
   height: 50px;
-  text-align: center; 
   background-color: yellow;
   font-weight: bold; 
   font-size: 25px; 
 }
 
-.box:hover {
+button:hover {
   cursor: pointer; 
 }
 
-.link{
-  text-decoration: none; 
-  color: black; 
-}
-
-.description{
-  text-align: center; 
-  font-size: 35px;
-}
-
-.description-detail{
-  margin-right: auto; 
-  margin-left: auto; 
-  width: 320px; 
-  margin-bottom: 5px; 
-  font-size: 24px;  
-}
-
-.product-photo{
-  border: 2px solid;
+/* product gallery specific */
+.product-photo-gallery{
+  border: 3px solid;
   width: 260px; 
   height: 265px; 
   margin-right: auto; 
@@ -110,23 +104,19 @@ p{ /*set font family on all text */
   margin-bottom: 0px; 
 }
 
-.product-photo-detail{ 
-  border: 4px solid; 
-  width: 700px; 
-  height: 700px; 
-  display: block; 
-  margin-right: auto; 
-  margin-left: auto; 
+.product-container:hover{ 
+  background-color: yellow; 
+  cursor: pointer; 
 }
 
-.product-photo-small{
-  border: 3px solid;
-  width: 120px; 
-  height: 120px; 
-  display: block; 
+.product-container{ /*contains and formats each bun element*/
+  padding-top: 5px;
+  margin-bottom: 12px; 
   margin-right: auto; 
-  margin-left: auto;
-  margin-bottom: 0px; 
+  margin-left: auto; 
+  width: 260px; 
+  padding-right: 10px; 
+  padding-left: 6px; 
 }
 
 .roll-name{
@@ -147,35 +137,30 @@ p{ /*set font family on all text */
   margin-top: 0; 
 }
 
-.center{
-  margin-right: auto;
-  margin-left: auto; 
-  text-align: center; 
-  padding-bottom: 50px; 
-}
-
-.cart-price{
-  font-size: 35px; 
-  margin-bottom: 0px;
-  text-align: center; 
-}
-
-.product-container{
-  padding-top: 5px;
-  margin-bottom: 12px; 
+/* product detail page specific */
+.description-detail{
   margin-right: auto; 
   margin-left: auto; 
-  width: 260px; 
-  padding-right: 10px; 
-  padding-left: 6px; 
+  width: 320px; 
+  margin-bottom: 5px; 
+  font-size: 24px;  
 }
 
-.product-container:hover{ /*product-gallery, highlight on hover*/
-  background-color: yellow; 
-  cursor: pointer; 
+.product-photo-detail{ 
+  border: 4px solid; 
+  width: 700px; 
+  height: 700px; 
+  display: block; 
+  margin-right: auto; 
+  margin-left: auto; 
 }
 
-.add-to-cart{
+.price-detail{
+  font-weight: bold;
+  font-size: 28px;  
+}
+
+.add-to-cart-container{ /*formats the price and add to cart button on product detail page */
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -183,9 +168,34 @@ p{ /*set font family on all text */
   width: 370px;  
 }
 
-.price-cart{
-  font-weight: bold;
-  font-size: 28px;  
+/* shopping cart page specific */ 
+.product-photo-cart{
+  border: 3px solid;
+  width: 100px; 
+  height: 100px; 
+  display: block; 
+  margin-right: auto; 
+  margin-left: auto;
+  margin-bottom: 0px; 
+}
+
+.cart-container{ /*contains and formats each element in cart*/
+  margin-right: auto;
+  margin-left: auto; 
+  text-align: center; 
+  padding-bottom: 50px; 
+}
+
+.cart-price{
+  font-size: 26px; 
+  margin-bottom: 0px;
+  text-align: center; 
+}
+
+.cart-info{ 
+  margin-top: 0px; 
+  margin-bottom: 0px;
+  font-size: 20px; 
 }
 
 .dropdown{
@@ -205,3 +215,15 @@ p{ /*set font family on all text */
   margin-right: auto; 
   width: 320px; 
 }
+
+/* */ 
+
+
+
+
+
+
+
+
+
+
