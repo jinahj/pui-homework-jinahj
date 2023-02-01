@@ -8,11 +8,11 @@ hr{ /*long border line*/
   border: 3px solid;  
 }
 
-p{ 
+p{ /*set font family on all text */ 
   font-family: Arial; 
 }
 
-.spacer{
+.spacer{ 
   height: 30px; 
 }
 
