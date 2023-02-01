@@ -74,6 +74,10 @@ p{
   font-size: 16px; 
 }
 
+.box:hover {
+  cursor: pointer; 
+}
+
 .link{
   text-decoration: none; 
   color: black; 
