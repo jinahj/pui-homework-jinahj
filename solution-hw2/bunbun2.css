@@ -1,0 +1,252 @@
+hr{ 
+  border: 3px solid; 
+}
+
+.short-hr{ 
+  margin-left: 200px;
+  margin-right: 200px;
+  border: 3px solid;  
+}
+
+p{ 
+  font-family: Arial; 
+}
+
+h1{ /* for page headings */
+  font-family: Arial; 
+  font-weight: 1; 
+  font-size: 35px;
+  margin-top: 0px; 
+}
+
+h2{ /* set font family for "products" and "cart" selectors */
+  font-family: Arial; 
+}
+
+
+.spacer{ 
+  height: 30px; 
+}
+
+.remove{ /* "remove" on shopping cart page */
+  font-size: 10px;  
+  font-weight: bold; 
+  text-decoration: underline; 
+  margin-top: 5px;
+}
+
+.link{ /* reverse design change when using <a> tag */
+  text-decoration: none; 
+  color: black; 
+}
+
+.logo{ /* applied on all pages */
+  width: 360px;
+  height: 210px; 
+  padding-left: 20px; 
+  padding-top: 10px; 
+}
+
+.PRODUCTS-highlight{  /* "PRODUCTS" highlighted on product gallery and product detail pages */
+  margin-right: 80px; 
+  display: inline-block; 
+  text-align: center;
+  font-weight: bold;  
+  background-color: yellow; 
+  font-size: 24px; 
+
+} 
+
+.header-nhighlight{ 
+  display: inline-block; 
+  text-align: center;  
+  font-size: 24px; 
+  padding-right: 80px; 
+}
+
+.CART-highlight{ /* "CART" highlighted on shopping cart page */
+  text-align: center;
+  font-weight: bold; 
+  margin-left: auto;
+  margin-right: 80px;  
+  background-color: yellow; 
+  font-size: 24px; 
+}
+
+
+button{ /*add to cart and checkout buttons */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border: 3px solid; 
+  margin-right: auto; 
+  margin-left: auto;
+  margin-top: 20px; 
+  margin-bottom: 100px; 
+  width: 200px;
+  height: 50px;
+  background-color: yellow;
+  font-weight: bold; 
+  font-size: 25px; 
+}
+
+button:hover {
+  cursor: pointer; 
+}
+
+/* product gallery specific */
+.product-photo-gallery{
+  border: 3px solid;
+  width: 260px; 
+  height: 265px; 
+  margin-right: auto; 
+  margin-left: auto; 
+  margin-bottom: 0px; 
+}
+
+.product-container:hover{ 
+  background-color: yellow; 
+  cursor: pointer; 
+}
+
+.product-container{ /*contains and formats each bun element*/
+  padding-top: 5px;
+  margin-bottom: 12px; 
+  margin-right: auto; 
+  margin-left: auto; 
+  width: 260px; 
+  padding-right: 10px; 
+  padding-left: 6px; 
+}
+
+.roll-name{
+  font-size: 24px; 
+  text-decoration: underline; 
+  width: 270px; 
+  margin-right: auto;
+  margin-left: auto; 
+  margin-bottom: 0px;
+  margin-top: 5px; 
+}
+
+.roll-price{
+  font-size: 24px; 
+  width: 260px; 
+  margin-right: auto;
+  margin-left: auto; 
+  margin-top: 0; 
+}
+
+/* product detail page specific */
+.description-detail{
+  margin-right: auto; 
+  margin-left: auto; 
+  width: 320px; 
+  margin-bottom: 5px; 
+  font-size: 24px;  
+}
+
+.product-photo-detail{ 
+  border: 4px solid; 
+  width: 700px; 
+  height: 700px; 
+  display: block; 
+  margin-right: 50px; 
+  margin-bottom: 100px;
+}
+
+.price-detail{
+  font-weight: bold;
+  font-size: 28px;  
+}
+
+.add-to-cart-container{ /*formats the price and add to cart button on product detail page */
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: baseline;
+  width: 370px;  
+}
+
+/* shopping cart page specific */ 
+.product-photo-cart{
+  border: 3px solid;
+  width: 100px; 
+  height: 100px; 
+  display: block; 
+  margin-right: auto; 
+  margin-left: auto;
+  margin-bottom: 0px; 
+}
+
+.cart-container{ /*contains and formats each element in cart*/
+  margin-right: auto;
+  margin-left: auto; 
+  text-align: center; 
+  padding-bottom: 50px; 
+}
+
+.cart-price{
+  font-size: 26px; 
+  margin-bottom: 0px;
+  text-align: center; 
+}
+
+.cart-info{ 
+  margin-top: 0px; 
+  margin-bottom: 0px;
+  font-size: 20px; 
+}
+
+.dropdown{
+  cursor: pointer; 
+  border: 3px solid; 
+  background-color: white; 
+  padding-top: 10px;  
+  padding-bottom: 10px; 
+  padding-left: 10px; 
+  width: 320px; 
+  text-align: left; 
+  font-size: 24px; 
+}
+
+.locate-dropdown{
+  margin-left: auto;
+  margin-right: auto; 
+  width: 320px; 
+}
+
+/* flex locaters */ 
+
+.gallery-menu-parent{ /* formatting photos on gallery */ 
+  display: flex; 
+  flex-wrap: wrap; 
+  width: 1040px; 
+  margin-right: auto;
+  margin-left: auto; 
+  margin-bottom: 30px; 
+}
+
+.product-cart-parent{
+  display: flex; 
+  justify-content: flex-end;
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+}
+
+.navigator-parent{
+  flex-direction: column;
+  width: 100%;  
+  margin-left: 20px; 
+}
+
+.logo-nav-parent{
+  display: flex; 
+  margin-bottom: 100px; 
+}
+
+.detail-container{
+  display: flex; 
+  align-items: center; 
+	justify-content: center; 
+}
