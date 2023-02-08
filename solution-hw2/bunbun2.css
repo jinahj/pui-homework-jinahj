@@ -48,6 +48,7 @@ h2{ /* set font family for "products" and "cart" selectors */
 }
 
 .PRODUCTS-highlight{  /* "PRODUCTS" highlighted on product gallery and product detail pages */
+  color:black; 
   margin-right: 80px; 
   display: inline-block; 
   text-align: center;
@@ -79,10 +80,7 @@ button{ /*add to cart and checkout buttons */
   justify-content: center;
   align-items: center; 
   border: 3px solid; 
-  margin-right: auto; 
   margin-left: auto;
-  margin-top: 20px; 
-  margin-bottom: 100px; 
   width: 200px;
   height: 50px;
   background-color: yellow;
@@ -111,10 +109,11 @@ button:hover {
 
 .product-container{ /*contains and formats each bun element*/
   padding-top: 5px;
-  margin-bottom: 12px; 
+  margin-bottom: 30px; 
   margin-right: auto; 
   margin-left: auto; 
   width: 260px; 
+  height: 100%; 
   padding-right: 10px; 
   padding-left: 6px; 
 }
@@ -134,7 +133,8 @@ button:hover {
   width: 260px; 
   margin-right: auto;
   margin-left: auto; 
-  margin-top: 0; 
+  margin-top: 0px; 
+  margin-bottom: 0px; 
 }
 
 /* product detail page specific */
@@ -158,14 +158,13 @@ button:hover {
 .price-detail{
   font-weight: bold;
   font-size: 28px;  
+  margin-left: auto; 
 }
 
 .add-to-cart-container{ /*formats the price and add to cart button on product detail page */
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
   align-items: baseline;
-  width: 370px;  
+  
 }
 
 /* shopping cart page specific */ 
@@ -224,7 +223,6 @@ button:hover {
   width: 1040px; 
   margin-right: auto;
   margin-left: auto; 
-  margin-bottom: 30px; 
 }
 
 .product-cart-parent{
