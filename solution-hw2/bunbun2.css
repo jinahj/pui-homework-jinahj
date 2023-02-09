@@ -16,7 +16,8 @@ h1{ /* for page headings */
   font-family: Arial; 
   font-weight: 1; 
   font-size: 35px;
-  margin-top: 0px; 
+  margin-top: 30px; 
+  margin-bottom: 80px; 
 }
 
 h2{ /* set font family for "products" and "cart" selectors */
@@ -26,10 +27,6 @@ h2{ /* set font family for "products" and "cart" selectors */
 
 .spacer{ 
   height: 30px; 
-}
-
-.horizontal-spacer{
-  width: 250px; 
 }
 
 .remove{ /* "remove" on shopping cart page */
@@ -45,8 +42,8 @@ h2{ /* set font family for "products" and "cart" selectors */
 }
 
 .logo{ /* applied on all pages */
-  width: 360px;
-  height: 210px; 
+  width: 320px;
+  height: 240px; 
   padding-left: 20px; 
   padding-top: 10px; 
 }
@@ -76,6 +73,10 @@ h2{ /* set font family for "products" and "cart" selectors */
   margin-right: 80px;  
   background-color: yellow; 
   font-size: 24px; 
+}
+
+.adjust-button{
+  margin-right: 125px; 
 }
 
 
@@ -175,9 +176,6 @@ button:hover {
   border: 3px solid;
   width: 100px; 
   height: 100px; 
-  display: block; 
-  margin-right: auto; 
-  margin-left: auto;
   margin-bottom: 0px; 
 }
 
@@ -190,6 +188,16 @@ button:hover {
   margin-top: 40px; 
   margin-left: auto; 
 }
+
+.cart-price-total{
+  font-size: 26px; 
+  margin-bottom: 0px;
+  text-align: center; 
+  width: 180px; 
+  margin-top: 40px; 
+  margin-left: 50px; 
+}
+
 
 .cart-info{ 
   margin-top: 0px; 
@@ -229,7 +237,7 @@ button:hover {
   display: flex; 
   justify-content: flex-end;
   margin-top: 20px; 
-  margin-bottom: 20px; 
+  border-bottom: 6px solid; 
 }
 
 .navigator-parent{
@@ -240,7 +248,6 @@ button:hover {
 
 .logo-nav-parent{
   display: flex; 
-  margin-bottom: 100px; 
 }
 
 .detail-container{
@@ -259,9 +266,36 @@ button:hover {
 .cart-container{ /*contains and formats each element in cart*/
   display: flex; 
   margin-left: auto; 
-  margin-right: 30%; 
   justify-content: flex-start;
   padding-bottom: 50px; 
-  width: 600px; 
+  width: 1004px; 
 }
 
+.total-container{
+  display: flex; 
+  margin-left: auto; 
+  justify-content: flex-start;
+  padding-bottom: 50px; 
+  width: 900px; 
+  padding-right: 90px; 
+}
+
+.cart-combined-container{
+  padding-top: 40px; 
+  padding-right: 70px; 
+  border-bottom: 6px solid;
+  margin-left: auto; 
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start; 
+  width: 1004px; 
+}
+
+.shopping-cart-container{
+  display: flex; 
+  justify-content: flex-end; 
+}
+
+.selections{
+  margin-left: 30px; 
+}
