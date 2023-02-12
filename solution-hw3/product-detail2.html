@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="bunbun2.css">
+    <script defer src="bunbun.js"></script>
+  </head>
+
+  <body>
+
+    <div>
+      <div class="logo-nav-parent">
+        <a href="product-gallery2.html">
+          <img class= "logo" src="./assets/logo-01.svg" alt="bunbun logo">
+        </a>
+        
+        <div class="navigator-parent">
+          <div class="product-cart-parent">
+            <a href="product-gallery2.html">
+              <h2 class="PRODUCTS-highlight">PRODUCTS</h2>
+            </a>
+            <a href="shopping-cart2.html" class="link">
+              <h2 class="header-nhighlight">CART</h2>
+            </a>
+          </div>
+          <p class="spacer"></p>
+          <h1>Original Cinnamon Roll</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="detail-container">
+      <img class="product-photo-detail" src="./assets/original-cinnamon-roll.jpeg " alt="original cinnamon roll">
+
+      <div class="selections"> <!--Selections-->
+        <p class="description-detail"> Customize our delicious, hand-made cinammon roll to your liking!</p>
+        <p class="spacer"></p>
+        <p class="description-detail">Glazing:</p>
+        <div class="locate-dropdown">
+          <select class = "dropdown" 
+          id = "glazing-dropdown"
+          onchange = glazingChange(this)></select> <!--glazing dropdown-->
+        </div>
+  
+        <p class="description-detail">Pack size:</p>
+        <div class="locate-dropdown">
+          <select class="dropdown" 
+          id="pack-size-dropdown"
+          onchange = packChange(this)></select>
+        </div>
+  
+        <p class="spacer"></p>
+        <p class="spacer"></p>
+  
+        <div class="add-to-cart-container">
+          <p class="price-detail">$ 2.49</p> <!--dynamically changes price-->
+          <button>Add to Cart</button>     
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
