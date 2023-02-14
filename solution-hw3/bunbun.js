@@ -68,6 +68,7 @@ function packChange(element){
   displayPrice.innerText = '$ ' + parseFloat(currentPrice).toFixed(2); 
 }
 
+/*REFERENCE SOURCE for toFixed() https://www.techonthenet.com/js/number_tofixed.php */ 
 
 
 
