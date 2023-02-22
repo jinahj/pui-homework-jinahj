@@ -95,7 +95,7 @@ headerElement.innerText = rollType + " Cinnamon Roll";
 
 //update image
 const rollImage = document.querySelector('.product-photo-detail'); 
-rollImage.src = './assets/' + rollType + '-cinnamon-roll.jpeg'; 
+rollImage.src = './assets/' + rollType.toLowerCase() + '-cinnamon-roll.jpeg'; 
 
 //update base price function depending on the roll type 
 const rollPrice = document.querySelector(".price-detail"); 
