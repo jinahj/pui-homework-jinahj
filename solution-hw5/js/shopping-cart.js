@@ -112,9 +112,9 @@ function createElement(roll){
   removeBtn.addEventListener('click', () => {
     if(cart.size > 0){
       deleteRoll(roll);
-      currentCartTotal -= totalItemPrice(roll); 
+      currentCartTotal -= parseFloat(totalItemPrice(roll)); 
       const cartTotalElement = document.querySelector('.cart-price-total'); 
-      cartTotalElement.innerText = '$ ' + currentCartTotal.toFixed(2);
+      cartTotalElement.innerText = '$ ' + parseFloat(currentCartTotal.toFixed(2));
     }
   });
 
@@ -124,7 +124,7 @@ function createElement(roll){
 
   currentCartTotal += parseFloat(totalItemPrice(roll)); 
   const cartTotalElement = document.querySelector('.cart-price-total'); 
-  cartTotalElement.innerText = '$ ' + currentCartTotal.toFixed(2);
+  cartTotalElement.innerText = '$ ' + parseFloat(currentCartTotal.toFixed(2));
 }
 
 
