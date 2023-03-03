@@ -112,7 +112,7 @@ function createElement(roll){
   removeBtn.addEventListener('click', () => {
     if(cart.length != 0){
       deleteRoll(roll);
-      currentCartTotal -= parseFloat(totalItemPrice(roll)); 
+      currentCartTotal -= totalItemPrice(roll); 
       const cartTotalElement = document.querySelector('.cart-price-total'); 
       cartTotalElement.innerText = '$ ' + currentCartTotal.toFixed(2);
     }
