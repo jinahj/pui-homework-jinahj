@@ -114,7 +114,7 @@ function createElement(roll){
       deleteRoll(roll);
       currentCartTotal -= parseFloat(totalItemPrice(roll)); 
       const cartTotalElement = document.querySelector('.cart-price-total'); 
-      cartTotalElement.innerText = '$ ' + parseFloat(currentCartTotal.toFixed(2));
+      cartTotalElement.innerText = '$ ' + parseFloat(currentCartTotal.toFixed(2)).toFixed(2);
     }
   });
 
@@ -124,7 +124,7 @@ function createElement(roll){
 
   currentCartTotal += parseFloat(totalItemPrice(roll)); 
   const cartTotalElement = document.querySelector('.cart-price-total'); 
-  cartTotalElement.innerText = '$ ' + parseFloat(currentCartTotal.toFixed(2));
+  cartTotalElement.innerText = '$ ' + parseFloat(currentCartTotal.toFixed(2)).toFixed(2);
 }
 
 
