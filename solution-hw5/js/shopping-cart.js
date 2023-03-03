@@ -110,7 +110,7 @@ function createElement(roll){
 
   const removeBtn = roll.element.querySelector('.remove'); 
   removeBtn.addEventListener('click', () => {
-    if(cart.length != 0){
+    if(cart.size > 0){
       deleteRoll(roll);
       currentCartTotal -= totalItemPrice(roll); 
       const cartTotalElement = document.querySelector('.cart-price-total'); 
@@ -145,4 +145,3 @@ function updateElement(roll){
   const itemPrice = roll.element.querySelector('.cart-price'); 
   itemPrice.innerText = '$ ' + totalItemPrice(roll); 
 }
-
